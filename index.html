@@ -7,7 +7,7 @@
   <script type="text/javascript">
      const searchParams = new URLSearchParams(window.location.search);
      console.log(searchParams,"searchParams")
-       const nseCode=searchParams.has('nse')
+       const nseCode=searchParams.get('nse')
         console.log(nseCode,"nseCode")
   new TradingView.widget(
   {
