@@ -5,6 +5,9 @@
   <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
+       var param = /[&?]path=([^&]+)/.exec(location.search);
+       param = param ? param[1].replace(/"/g, '&quot;') : '';
+       console.log(param,"param")
   new TradingView.widget(
   {
   "autosize": true,
